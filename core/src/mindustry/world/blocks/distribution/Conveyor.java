@@ -25,7 +25,7 @@ import static mindustry.Vars.*;
 
 public class Conveyor extends Block implements Autotiler{
     private static final float itemSpace = 0.4f;
-    private static final int capacity = 3;
+    private static final int capacity = 7;
 
     public @Load(value = "@-#1-#2", lengths = {7, 4}) TextureRegion[][] regions;
 
@@ -47,7 +47,7 @@ public class Conveyor extends Block implements Autotiler{
         underBullets = true;
 
         ambientSound = Sounds.conveyor;
-        ambientSoundVolume = 0.0022f;
+        ambientSoundVolume = 0.022f;
         unloadable = false;
         noUpdateDisabled = false;
     }
