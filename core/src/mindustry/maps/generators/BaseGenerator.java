@@ -51,7 +51,7 @@ public class BaseGenerator{
 
         float bracketRange = 0.17f;
         float baseChance = Mathf.lerp(0.7f, 2.1f, difficulty);
-        int wallAngle = 70; //180 for full coverage
+        int wallAngle = 90; //180 for full coverage
         double resourceChance = 0.5 * baseChance;
         double nonResourceChance = 0.002 * baseChance;
         int passes = difficulty < 0.4 ? 1 : difficulty < 0.8 ? 3 : 5;
