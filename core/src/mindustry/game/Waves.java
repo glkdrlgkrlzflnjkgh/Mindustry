@@ -295,8 +295,8 @@ public class Waves{
 
         Seq<SpawnGroup> out = new Seq<>();
 
-        //max reasonable wave, after which everything gets boring
-        int cap = 150;
+        //do i really care about max wave? NO!
+        int cap = 900; // we'll keep it defined just in case some other part of the code uses it
 
         float shieldStart = 30, shieldsPerWave = 20 + difficulty*30f;
         float[] scaling = {1, 2f, 3f, 4f, 5f};
@@ -306,7 +306,7 @@ public class Waves{
             UnitType[] curSpecies = Structs.random(rand, fspec);
             int curTier = 0;
 
-            for(int i = start; i < cap;){
+            for(int i = start; i < 999999;){
                 int f = i;
                 int next = rand.random(8, 16) + (int)Mathf.lerp(5f, 0f, difficulty) + curTier * 4;
 
