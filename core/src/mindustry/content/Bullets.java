@@ -15,7 +15,7 @@ public class Bullets{
     public static void load(){
 
         //not allowed in weapons - used only to prevent NullPointerExceptions
-        placeholder = new BasicBulletType(2.5f, 9, "ohno"){{
+        placeholder = new BasicBulletType(2.5f, 9, "we screwed!!!"){{
             width = 7f;
             height = 9f;
             lifetime = 60f;

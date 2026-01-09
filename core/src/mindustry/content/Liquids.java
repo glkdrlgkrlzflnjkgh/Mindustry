@@ -10,7 +10,7 @@ public class Liquids{
 
     public static void load(){
 
-        water = new Liquid("water", Color.valueOf("596ab8")){{
+        water = new Liquid("water", Color.valueOf("6b82e9ff")){{
             heatCapacity = 0.4f;
             effect = StatusEffects.wet;
             boilPoint = 0.5f;
