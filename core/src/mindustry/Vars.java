@@ -106,9 +106,9 @@ public class Vars implements Loadable{
     /** displayed item size when ingame. */
     public static final float itemSize = 5f;
     /** units outside this bound will die instantly */
-    public static final float finalWorldBounds = 250;
+    public static final float finalWorldBounds = 4096;
     /** default range for building */
-    public static final float buildingRange = 220f;
+    public static final float buildingRange = 2000f;
     /** scaling for unit circle collider radius, based on hitbox size */
     public static final float unitCollisionRadiusScale = 0.6f;
     /** range for moving items */

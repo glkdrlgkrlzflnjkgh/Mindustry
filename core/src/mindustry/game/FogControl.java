@@ -20,7 +20,7 @@ import static mindustry.Vars.*;
 
 public final class FogControl implements CustomChunk{
     private static volatile int ww, wh;
-    private static final int dynamicUpdateInterval = 1000 / 25; //25 FPS
+    private static final int dynamicUpdateInterval = 1000 / 30; //~30 FPS
     private static final Object notifyStatic = new Object(), notifyDynamic = new Object();
 
     /** indexed by team */
