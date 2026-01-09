@@ -1,3 +1,16 @@
+NOTE! THIS IS NOT THE OFFICAL MINDUSTRY: IT. IS. A. FORK!
+
+
+
+
+
+
+
+
+
+
+
+
 ![Logo](core/assets-raw/sprites/ui/logo.png)
 
 [![Build Status](https://github.com/Anuken/Mindustry/workflows/Tests/badge.svg?event=push)](https://github.com/Anuken/Mindustry/actions)
