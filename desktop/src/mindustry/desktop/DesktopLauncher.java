@@ -81,7 +81,7 @@ public class DesktopLauncher extends ClientLauncher{
                             }
                             case "coreGl" -> coreProfile = true;
                             case "compatibilityGl" -> coreProfile = false;
-                            case "antialias" -> samples = 16;
+                            case "antialias" -> samples = 32;
                             case "debug" -> Log.level = LogLevel.debug;
                             case "maximized" -> maximized = Boolean.parseBoolean(arg[i + 1]);
                             case "testMobile" -> testMobile = true;
@@ -273,7 +273,7 @@ public class DesktopLauncher extends ClientLauncher{
             message(
                 total.contains("Couldn't create window") ? "A graphics initialization error has occured! Try to update your graphics drivers:\n" + finalMessage :
                             "Your graphics card does not support the right OpenGL features.\n" +
-                                    "Try to update your graphics drivers. If this doesn't work, your computer may not support Mindustry.\n\n" +
+                                    "Try to update your graphics drivers. If this doesn't work, your computer may not support Mindustry!!!\n\n" +
                                     "Full message: " + finalMessage);
             badGPU = true;
         }
