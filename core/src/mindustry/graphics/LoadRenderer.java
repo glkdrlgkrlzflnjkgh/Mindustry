@@ -468,7 +468,7 @@ public class LoadRenderer implements Disposable{
         Draw.color(Color.black, color, alpha);
         Fill.square(w/2f, h/2f, bsize/3f, 45);
 
-        //note for translators: this text is unreadable and for debugging/show anyway, so it's not translated
+        //note for translators: This is now readable! You should translate it ASAP!
         if(assets.isLoaded("tech")){
             String name = assets.getCurrentLoading() != null ? assets.getCurrentLoading().fileName.toLowerCase() : "system";
 
@@ -479,7 +479,7 @@ public class LoadRenderer implements Disposable{
             font.getData().markupEnabled = true;
             font.setColor(Pal.accent);
             Draw.color(Color.black);
-            font.draw(red + "[[[[ " + key + " ]]\n" + orange + "<" + Version.modifier + "  " + (Version.build == 0 ? "[init]" : Version.buildString()) + ">", w/2f, h/2f + 110*s, Align.center);
+            font.draw( "[[[[ " + key + " ]]\n" + orange + "<" + Version.modifier + "  " + (Version.build == 0 ? "[init]" : Version.buildString()) + ">", w/2f, h/2f + 110*s, Align.center);
         }
 
         Draw.flush();

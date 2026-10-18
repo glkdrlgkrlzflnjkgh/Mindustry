@@ -13,11 +13,12 @@ if(new File(settingsDir, 'local.properties').exists()){
 }
 
 if(System.getenv("JITPACK") == "true") hasSdk = false
-
+// comment this out to enable android builds. (NB! This will cause a build failure if you do not have the android SDK installed!!!)
+hasSdk = false
 if(hasSdk){
     include 'android'
 }else{
-    println("No Android SDK found. Skipping Android module.")
+    println("No Android SDK found. Skipping Android module. (or disabled per line 17 of settings.gradle, comment-out that line to re-enable android build.)")
 }
 
 if(hasProperty("localRhino") || localProperties.getOrDefault("localRhino", "false") == "true"){
@@ -30,10 +31,10 @@ if(hasProperty("localSteamworks") || localProperties.getOrDefault("localSteamwor
 
 if(!hasProperty("noLocalArc")){
     if(new File(rootDir.parent, 'Arc').exists()){
-        println("Compiling with localArc")
+        println("Compiling with a local clone of arc!")
         includeBuild("../Arc")
     }else{
-        println("Local Arc not found. Cloning https://github.com/Anuken/Arc to a directory next to Mindustry is highly recommended, as jitpack is unreliable.")
+        throw new Exception("!!! ARC NOT FOUND !!! Put the Arc folder next to your Mindustry folder, and DO NOT put the arc folder into the Mindustry folder.")
     }
 
     if(new File(rootDir.parent, 'Mindustry-Debug').exists()){
@@ -41,5 +42,5 @@ if(!hasProperty("noLocalArc")){
         project(":debug").projectDir = new File(rootDir.parent, "Mindustry-Debug")
     }
 }else{
-    println("Not including local repositories.")
+    println("Not including local repositories. . .")
 }
