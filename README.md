@@ -1,4 +1,4 @@
-##DISCLAIMER: this is NOT the original Mindustry! It is a fork and is in no way affiliated with the original!
+## DISCLAIMER: this is NOT the original Mindustry! It is a fork and is in no way affiliated with the original!
 
 
 ![Logo](core/assets-raw/sprites/ui/logo.png)
